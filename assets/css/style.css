@@ -1,0 +1,84 @@
+@import url('reset.css');
+
+header .logo-menu img {
+    margin-left: 25px;
+}
+
+header {
+    justify-content: space-between; /*Insere espaço da seguinte maneira -> |o   o   o| */
+    background: white;
+    display: flex; /*Coloca um item ao lado do outro*/
+    align-items: center;
+    padding: 6px 20px;
+}
+
+header .notificacao {
+    display: flex; /*Coloca um item ao lado do outro*/
+    justify-content: space-between;
+    gap: 20px; /*Espaço entre os elementos */
+    align-items: center;
+}
+
+header .notificacao img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header .menu img{
+    margin-left:50px;
+}
+main .conteudo{
+    display: flex;
+}
+main .conteudo .barra-lateral{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(10, 7%);
+    margin-top: 20px;
+    margin-left: 20px;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+main .conteudo .barra-lateral p{
+    font-weight: bold;
+}
+
+main .conteudo .barra-lateral .item1,
+main .conteudo .barra-lateral .item2,
+main .conteudo .barra-lateral .item3,
+main .conteudo .barra-lateral .item4,
+main .conteudo .barra-lateral .item5,
+main .conteudo .barra-lateral .item6,
+main .conteudo .barra-lateral .item7,
+main .conteudo .barra-lateral .item8,
+main .conteudo .barra-lateral .item9,
+main .conteudo .barra-lateral .item10 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+main .conteudo .lista-videos{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap:15px;
+}
+
+main .conteudo .lista-videos .video .informacoes .descricao .titulo p{
+    font-weight: bold;
+    color: black;
+}
+main .conteudo .lista-videos .video .informacoes{
+    display:flex;
+    gap: 10px;
+}
+
+main .conteudo .lista-videos .video .informacoes .data-visualizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
